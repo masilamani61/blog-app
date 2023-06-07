@@ -1,0 +1,61 @@
+.login{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    
+    background-image: url('https://images.unsplash.com/photo-1631631480669-535cc43f2327?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww&w=1000&q=80');
+    color: antiquewhite;
+}
+
+
+.loginform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white
+}
+.loginform h1{
+    font-size: 45px;
+    font-weight: 1000;
+    margin-bottom: 20px;
+}
+.loginform label{ 
+    font-size: 35px;
+    padding-bottom: 15px;
+    font-weight: 800;
+}
+.loginform input{
+    height: 30px;
+    width: 350px;
+    font-size: 25px;
+    border-radius: 7px;
+}
+.loginform button{
+    margin-top: 15px;
+    width: 350px;
+    height: 30px;
+    font-size: 25px;
+    border-radius: 7px;
+    color: blue;
+    cursor: pointer;
+}
+.loginbutton:disabled{
+    cursor: not-allowed;
+
+}
+.register{
+    margin-top: 15px;
+    width: 350px;
+    height: 30px;
+    font-size: 25px;
+    border-radius: 7px;
+    color: blue;
+    cursor: pointer;
+
+}
+.login button:hover{
+    background-color: black;
+}

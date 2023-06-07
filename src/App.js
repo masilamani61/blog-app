@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Topbar from "./components/topbar/topbar";
+import Home from "./pages/home/home";
+import Login from "./pages/login/login";
+import Register from "./pages/register/register";
+import Setting from "./pages/settings/setting";
+import Single from "./pages/single/single";
+import Write from "./pages/write/write";
+import { useContext } from "react";
+import { Context } from "./context/context";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(){
+  const {user}=useContext(Context)
+  return(<div>
+    <BrowserRouter>
+    <Topbar/>
+    <Routes>
+      <Route path='/' element={<Home/>}></Route>
+      <Route path='login' element={user?<Home/>:<Login/>}></Route>
+      <Route path='register' element={user?<Home/>:<Register/>}></Route>
+      <Route path='write' element={user?<Write/>:<Login/>}></Route>
+      <Route path='setting' element={user?<Setting/>:<Login/>}></Route>
+      <Route path='post/:postid' element={<Single/>}></Route>
+      
+    </Routes>
+    
+    </BrowserRouter>
+
+  </div>)
 }
+
 
 export default App;

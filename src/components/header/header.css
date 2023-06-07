@@ -1,0 +1,33 @@
+.header{
+    margin-top: 60px;
+}
+.header-title{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-between;
+
+}
+.title1{
+   position: absolute;
+    font-size: 50px;
+    font-weight: 700;
+    top: 18%;
+    color: aqua;
+    
+    padding-bottom: 50px;
+}
+.title2{
+    position: absolute;
+    font-size: 100px;
+    top: 20%;
+    color: azure;
+    margin-bottom: 20px;
+}
+.headerimage{
+    margin-top: 30px;
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}

@@ -1,0 +1,78 @@
+.settings{
+    display: flex;
+}
+.setting-wrapper{
+    flex: 9;
+}
+.setting-title{
+    margin-top: 12px;
+    font-size: 30px;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.delete{
+    float: right;
+    font-size: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.update{
+    margin-left: 20px;
+    cursor: pointer;
+}
+.settingform{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.profiletitle{
+    font-size: 35px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.image{
+    margin:10px;
+    height: 70px;
+    width: 70px;
+}
+.settingprofile{
+    display: flex;
+    
+    align-items: center;
+    
+}
+.settingprofile .icon{
+    font-size: 25px;
+    color:red
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: 20px;
+
+}
+.details label{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.details input{
+    height: 45px;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-size: 25px;
+}
+.details .button{
+    margin-top: 15px;
+    height: 45px;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-size: 25px;
+    color: green;
+    background-color: beige;
+    cursor: pointer;
+
+}

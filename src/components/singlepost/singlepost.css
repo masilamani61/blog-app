@@ -1,0 +1,75 @@
+.singlepost{
+    flex: 9;
+}
+.singlepostwrapper{
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 5px;
+
+}
+.singlepostimage{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+.singleposttitle{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 25px;
+    margin-bottom: 10px;
+
+}
+.singlepostedit{
+    float: right;
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
+    padding-left: 10px;
+    justify-content: space-between;
+}
+.author{
+    font-size: 25px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+.date{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.singledescription{
+    margin-top: 25px;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px;
+    font-size: 24p x;
+    font-weight: 600;
+}
+.titleupdate{
+    width: 250px;
+    height: 35px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 20px;
+
+
+}
+.descriptionupdate{
+    width: 500px;
+    height: 150px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+.buttonupdate{
+    width: 100px;
+    height: 35px;
+    background-color: green;
+    color: black;
+    font-size: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+}
