@@ -11,7 +11,7 @@ import { Context } from "./context/context";
 
 function App(){
   const {user}=useContext(Context)
-  return(<div>
+  return(<div basename='blog-app'>
     <BrowserRouter>
     <Topbar/>
     <Routes>
