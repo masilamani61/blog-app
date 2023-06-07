@@ -5,7 +5,7 @@ import axios from 'axios'
 import { Link } from 'react-router-dom';
 import { Context } from '../../context/context';
 
-const PF="https://blog-app-api-lv3i.onrender.com/images/";
+const PF="https://blog-app-api1.onrender.com/images/";
   
 
 export default function Singlepost(){
@@ -21,7 +21,7 @@ export default function Singlepost(){
     useEffect(()=>{
 
         const getpost=async()=>{
-            const res=await axios.get('https://blog-app-api-lv3i.onrender.com/api/post/'+path)
+            const res=await axios.get('https://blog-app-api1.onrender.com/api/post/'+path)
             setpost(res.data)
         }
         getpost();
@@ -31,7 +31,7 @@ export default function Singlepost(){
       
         try{
             
-            await axios.delete('https://blog-app-api-lv3i.onrender.com/api/post/'+post._id,{data:{username:user.username}})
+            await axios.delete('https://blog-app-api1.onrender.com/api/post/'+post._id,{data:{username:user.username}})
             window.location.replace('/')
         }
         catch(err){
@@ -41,7 +41,7 @@ export default function Singlepost(){
 
     const handleupdate=async()=>{
         try{
-            await axios.put('https://blog-app-api-lv3i.onrender.com/api/post/'+post._id,
+            await axios.put('https://blog-app-api1.onrender.com/api/post/'+post._id,
             {
                 username:user.username,
                 title,
