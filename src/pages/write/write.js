@@ -15,7 +15,7 @@ export default function Write(){
             title,
             desc,
         }
-        if (file){
+        if (file){ 
             const data=new FormData();
             const filename=Date.now()+file.name;;
             data.append('name',filename)
