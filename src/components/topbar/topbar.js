@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import './top.css';
 import { Link } from "react-router-dom";
 import { Context } from '../../context/context';
-const pf="./images/"
+const pf="../images/"
 
 export default function Topbar(){
     const {user,dispatch}=useContext(Context)
