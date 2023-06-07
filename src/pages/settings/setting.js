@@ -3,7 +3,7 @@ import Slidebar from '../../components/slidebar/slidebar'
 import { useContext, useState } from 'react'
 import { Context } from '../../context/context'
 import axios from 'axios'
-const pf="http://localhost:5000/images/"
+const pf="https://blog-app-api-lv3i.onrender.com/images/"
 export default function Setting(){
     const {user,dispatch}=useContext(Context)
     const [email,setemail]=useState('')
@@ -38,7 +38,7 @@ export default function Setting(){
 
         }
         try{
-            const res =await axios.put('http://localhost:5000/api/update/'+user._id,updateduser)
+            const res =await axios.put('https://blog-app-api-lv3i.onrender.com/api/update/'+user._id,updateduser)
             dispatch({type:'update sucess',payload:res.data})
             console.log(user)
             
