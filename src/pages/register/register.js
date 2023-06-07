@@ -19,7 +19,7 @@ export default function Register(){
 
         })
 
-        res.data && window.location.replace('/login')
+        res.data && window.location.replace('https://blog-app-o0wb.onrender.com/login')
     }
         catch(err){
             seterr(true)
