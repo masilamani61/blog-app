@@ -15,7 +15,7 @@ function Home(){
     useEffect(()=>{
         const fetchpost=async()=>{
             
-            const res=await axios.get('https://blog-app-api-lv3i.onrender.com/api/post'+search)
+            const res=await axios.get('https://blog-app-api1.onrender.com/api/post'+search)
             setposts(res.data)
         }
         fetchpost();
