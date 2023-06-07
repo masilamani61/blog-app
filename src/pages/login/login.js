@@ -15,7 +15,7 @@ export default function Login(){
         dispatch({type:'login start'
         });
         try{
-            const res=await axios.post('https://blog-app-api-lv3i.onrender.com/api/auth/login',{
+            const res=await axios.post('https://blog-app-api1.onrender.com/api/auth/login',{
                 username:useref.current.value,
                 password:passwordref.current.value
                 
