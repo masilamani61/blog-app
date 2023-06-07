@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import './top.css';
 import { Link } from "react-router-dom";
 import { Context } from '../../context/context';
-const pf="http://localhost:5000/images/"
+const pf="https://blog-app-api-lv3i.onrender.com/images/"
 
 export default function Topbar(){
     const {user,dispatch}=useContext(Context)
