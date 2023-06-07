@@ -12,7 +12,7 @@ export default function Register(){
     const handlesumit=async(e)=>{
         e.preventDefault()
         try{
-        const res=await axios.post('https://blog-app-api-lv3i.onrender.com/api/auth/register',{
+        const res=await axios.post('https://blog-app-api1.onrender.com/api/auth/register',{
             username,
             email,
             password
