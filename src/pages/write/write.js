@@ -29,7 +29,7 @@ export default function Write(){
             }
             try{
                const res= await axios.post('https://blog-app-api1.onrender.com/api/post',newpost)
-               window.location.replace('http://localhost:3000/post/'+res.data._id)
+               window.location.replace('https://blog-app-o0wb.onrender.com/post/'+res.data._id)
             }
             catch{
 
