@@ -9,7 +9,7 @@ export default function Slidebar(){
 
     useEffect(()=>{
         const categories= async()=>{
-            const res=await axios.get('https://blog-app-api-lv3i.onrender.com/api/categories')
+            const res=await axios.get('https://blog-app-api1.onrender.com/api/categories')
             
             setcat(res.data)
         }
