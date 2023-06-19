@@ -30,7 +30,7 @@ export default function Topbar(){
             </div>
             <div className='topright'>
                 {user? (<Link to='/setting' className='link'>
-                     <img className='topimage' src={pf+user.profilepic} alt=''/>
+                     <img className='topimage' src={user.profilepic} alt=''/>
                      </Link>
                      ):
                      
