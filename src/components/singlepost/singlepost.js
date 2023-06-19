@@ -59,7 +59,7 @@ export default function Singlepost(){
             <div className='singlepostwrapper'>
                 {post.photo &&(
                 <img className='singlepostimage'
-                src={PF+post.photo}
+                src={post.photo}
                 alt=''
                 />)
 }               { update===true ?(<input type='text' onChange={e=>{settitle(e.target.value)}} className='titleupdate' placeholder={post.title}/>): (
