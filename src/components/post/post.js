@@ -5,7 +5,7 @@ export default function Post({ post }) {
   const PF = "https://blog-app-api1.onrender.com/images/";
   return (
     <div className="post">
-      {post.photo && <img className="postImg" src={PF + post.photo} alt="" />}
+      {post.photo && <img className="postImg" src={post.photo} alt="" />}
       <div className="postinfo">
         <div className="postCats">
           {post.categories.map((c) => (
