@@ -2,11 +2,12 @@ import './setting.css'
 import Slidebar from '../../components/slidebar/slidebar'
 import { useContext, useState } from 'react'
 import { Context } from '../../context/context'
-import axios from 'axios'
+import axios from 'axios';
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+
 import { storage } from '../../firebas'
 
-const pf="http://localhost:5000/images/"
+
 export default function Setting(){
     const {user,dispatch}=useContext(Context)
     const [email,setemail]=useState('')
