@@ -99,7 +99,7 @@ const uploadTask =  uploadBytesResumable(storageRef, file);
                 <form className='settingform' onSubmit={handlesumit}>
                     <label className='profiletitle'>profile picture</label>
                     <div className='settingprofile'>
-                        <img className='image' alt='' src={ file ? URL.createObjectURL(file):pf+user.profilepic}/>
+                        <img className='image' alt='' src={ file ? URL.createObjectURL(file):user.profilepic}/>
                         <label htmlFor='profile'>
                         <i class="icon fa-solid fa-user"></i>
                         </label>
