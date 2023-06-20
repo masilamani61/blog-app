@@ -52,7 +52,7 @@ uploadTask.on('state_changed',
         console.log(newpost)
         try{
           const res=await  axios.post('https://blog-app-api1.onrender.com/api/post',newpost)
-          window.location.replace('https://blog-jqq6.onrender.com/post/'+res.data._id)
+          window.location.replace('https://blog-jqq6.onrender.com')
        }
        catch{
            
