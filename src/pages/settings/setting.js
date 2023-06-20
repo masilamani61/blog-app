@@ -63,7 +63,7 @@ const uploadTask =  uploadBytesResumable(storageRef, file);
        
        console.log(updateduser)
        try{
-        const res =axios.put('http://localhost:5000/api/update/'+user._id,updateduser)
+        const res =axios.put('https://blog-app-api1.onrender.com/api/update/'+user._id,updateduser)
         dispatch({type:'update sucess',payload:res.data})
         console.log(user)
         
@@ -79,7 +79,7 @@ const uploadTask =  uploadBytesResumable(storageRef, file);
             
         }
         try{
-            const res =await axios.put('http://localhost:5000/api/update/'+user._id,updateduser)
+            const res =await axios.put('https://blog-app-api1.onrender.com/api/update/'+user._id,updateduser)
             dispatch({type:'update sucess',payload:res.data})
             console.log(user)
             
