@@ -51,8 +51,8 @@ uploadTask.on('state_changed',
         newpost.photo=downloadURL
         console.log(newpost)
         try{
-          const res=await  axios.post('http://localhost:5000/api/post',newpost)
-          window.location.replace('http://localhost:3000/post/'+res.data._id)
+          const res=await  axios.post('https://blog-app-api1.onrender.com/api/post',newpost)
+          window.location.replace('https://blog-jqq6.onrender.com/post/'+res.data._id)
        }
        catch{
            
@@ -65,8 +65,8 @@ uploadTask.on('state_changed',
         }
         else{
             try{
-               const res= await axios.post('http://localhost:5000/api/post',newpost)
-               window.location.replace('http://localhost:3000/post/'+res.data._id)
+               const res= await axios.post('http://blog-app-api1.onrender.com/api/post',newpost)
+               window.location.replace('https://blog-jqq6.onrender.com/post/'+res.data._id)
             }
             catch{
 
