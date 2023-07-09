@@ -15,6 +15,7 @@ export default function Login(){
         dispatch({type:'login start'
         });
         try{
+            console.log(useref.current.value,passwordref.current.value)
             const res=await axios.post('https://blog-app-api1.onrender.com/api/auth/login',{
                 username:useref.current.value,
                 password:passwordref.current.value
