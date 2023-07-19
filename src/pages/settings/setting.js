@@ -11,10 +11,10 @@ import { storage } from '../../firebas'
 export default function Setting
 
     const {user,dispatch}=useContext(Context)
-    console.log(user)
-    const [email,setemail]=useState('')
+
+    const [email,setemail]=useState(user.email)
     const [file ,setfile]=useState(null)
-    const [username,setusername]=useState('')
+    const [username,setusername]=useState(user.username)
     const [password,setpassword]=useState('')
 
     
