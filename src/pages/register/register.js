@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import './register.css'
 import { useState } from 'react'
+import { Context } from '../../context/context'
 import axios from 'axios'
 
 export default function Register(){
@@ -8,6 +9,9 @@ export default function Register(){
     const[password,setpassword]=useState('')
     const[email,setemail]=useState('')
     const[err,seterr]=useState(false)
+    
+    const{user,dispatch,isfetching}=useContext(Context)
+
 
     const handlesumit=async(e)=>{
         e.preventDefault()
@@ -18,8 +22,11 @@ export default function Register(){
             password
 
         })
+            
+        dispatch({type:'login sucess',payload:res.data})
+          
 
-        res.data && window.location.replace('https://blog-jqq6.onrender.com')
+        
     }
         catch(err){
             seterr(true)
