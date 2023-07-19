@@ -9,6 +9,8 @@ import { storage } from '../../firebas'
 
 
 export default function Setting(){
+    const user=window.localStorage.getItem('user')
+    console.log(user)
     const {user,dispatch}=useContext(Context)
     const [email,setemail]=useState('')
     const [file ,setfile]=useState(null)
