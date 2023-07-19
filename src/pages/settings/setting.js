@@ -109,11 +109,11 @@ const uploadTask =  uploadBytesResumable(storageRef, file);
                     <div className='details'>
                         <input type='file' id='profile' onChange={e=>setfile(e.target.files[0])} style={{display:'None'}}/>
                         <label>email id</label>
-                        <input type='email' onChange={e=>setemail(e.target.value)} />
+                        <input type='email' value={email} onChange={e=>setemail(e.target.value)} />
                         <label>username</label>
-                        <input type='text' onChange={e=>setusername(e.target.value)} />
+                        <input type='text' value={username} onChange={e=>setusername(e.target.value)} />
                         <label>password</label>
-                        <input type='password' onChange={e=>setpassword(e.target.value)} />
+                        <input type='password' value={password} onChange={e=>setpassword(e.target.value)} />
                         <button className='button' type='submit'>Update</button>
                     </div>
                 </form>
