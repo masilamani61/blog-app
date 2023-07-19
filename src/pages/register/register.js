@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './register.css'
-import { useState } from 'react'
+import { useState,useContext } from 'react'
 import { Context } from '../../context/context'
 import axios from 'axios'
 
