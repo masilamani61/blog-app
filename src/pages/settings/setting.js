@@ -8,10 +8,10 @@ import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/
 import { storage } from '../../firebas'
 
 
-export default function Setting(){
-    const user=window.localStorage.getItem('user')
-    console.log(user)
+export default function Setting
+
     const {user,dispatch}=useContext(Context)
+    console.log(user)
     const [email,setemail]=useState('')
     const [file ,setfile]=useState(null)
     const [username,setusername]=useState('')
