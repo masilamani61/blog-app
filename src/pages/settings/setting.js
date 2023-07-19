@@ -8,7 +8,7 @@ import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/
 import { storage } from '../../firebas'
 
 
-export default function Setting
+export default function Setting(){
 
     const {user,dispatch}=useContext(Context)
 
